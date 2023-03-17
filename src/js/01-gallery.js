@@ -7,12 +7,9 @@ import { galleryItems } from './gallery-items';
 console.log(galleryItems);
 
 
-
 const gallery = document.getElementsByClassName("gallery")[0]
 
-
 createImages(galleryItems)
-
 
 function createImages(e) {
    const images = e.reduce ((arr,{ preview, original, description }) => {
